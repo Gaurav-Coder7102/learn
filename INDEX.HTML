@@ -2,20 +2,39 @@
 <html>
 <head>
     <title>JQuery Tutorial</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function(){  <!-- ready function avoids  execution before thr doumcnet is laded completely-->
+
             $("button").click(function(){
-                alert('Button clicked');
+                $(this).hide(2000)
+            });
+
+            $("#p1").click(function(){
+
+                $(this).hide()
             });
         });
     </script>
 </head>
-<body>
+<body style="background-color: #009688;">
+    
     <center>
+        <h1 style="color: aqua;">  hello from Nashik</h1>
         Hello from Netwin
         <br><br>
         <button>Click me</button>
+     <p id="p1">
+
+
+
+        In HTML, comments are used to insert notes or explanations in the code that will not be 
+        displayed on the webpage. Comments can be 
+        helpful for documentation purposes, to temporarily disable parts of the code, or to make the code more readable.
+
+
+     </p>
+        
     </center>
 </body>
 </html>
